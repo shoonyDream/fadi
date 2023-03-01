@@ -1,0 +1,300 @@
+{% set page = 'main' %}
+{% import "template/_mixins.html" as mixins %}
+{% include "template/header.html" %}
+<section class="uk-section section section--bg" style="background-image: url(./img/common/banner.jpg)">
+  <div class="uk-container">
+    <div class="section__header">
+      <div class="section__title">
+        <h1>О нас</h1>
+      </div>
+    </div>
+    <div class="section__body">
+      <p>
+        Современная клиника эстетической и функциональной стоматологии в Краснодаре и Москве. Используем передовые
+        методики и лечения. Команда квалифицированных докторов сделает ваше присутствие в клинике комфортным, уютным и
+        льтативным.</p>
+    </div>
+  </div>
+</section>
+<section class="uk-section section">
+  <div class="uk-container">
+    <div class="section__header">
+      <div class="section__title">
+        <h2>Почему нам доверяют?</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="key-indicators key-indicators--bordered-left uk-child-width-1-3@m uk-child-width-1-2@s">
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--icon key-indicator--labeled">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">
+                {{mixins.icon('cert')}}
+              </div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__title">
+                <span>Гарантия качества</span>
+              </div>
+              <div class="key-indicator__text">
+                <span>Применение сертифицированного оборудования и материалов ведущих
+                  мировых брендов позволяет
+                  гарантировать качество работ, соответствующее высоким требованиям и современным медицинским
+                  протоколам.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--icon key-indicator--labeled">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">
+                {{mixins.icon('stars')}}
+              </div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__title">
+                <span>Команда профессионалов</span>
+              </div>
+              <div class="key-indicator__text">
+                <span>Консультация у врача-стоматолога проходит в приятной, спокойной обстановке. На первичной
+                  консультации вам предложат все
+                  возможные варианты лечения, из которых вы сможете выбрать наиболее подходящий.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--icon key-indicator--labeled">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">
+                {{mixins.icon('hand-done')}}
+              </div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__title">
+                <span>Передовые технологии и оборудование</span>
+              </div>
+              <div class="key-indicator__text">
+                <span>Высокотехнологичное оснащение клиники позволяет выполнять качественную диагностику и
+                  стоматологические процедуры различного уровня сложности.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="uk-section section section--light">
+  <div class="uk-container">
+    <div class="section__header">
+      <div class="section__title">
+        <h2>Наши врачи</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div class="person-list uk-child-width-1-4@s uk-child-width-1-2" uk-grid>
+        <div>
+          <div class="person">
+            <div class="person__image">
+              <div class="person__img">
+                {{mixins.icon('pers')}}
+              </div>
+            </div>
+            <div class="person__body">
+              <div class="person__name">
+                Владислав
+              </div>
+              <div class="person__post">
+                Врач
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="person">
+            <div class="person__image">
+              <div class="person__img">
+                <img src="./img/icns/pers.svg" alt="" width="600" height="600">
+              </div>
+            </div>
+            <div class="person__body">
+              <div class="person__name">
+                Владислав
+              </div>
+              <div class="person__post">
+                Врач
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="person">
+            <div class="person__image">
+              <div class="person__img">
+                <img src="./img/common/designer.jpg" alt="" width="600" height="600">
+              </div>
+            </div>
+            <div class="person__body">
+              <div class="person__name">
+                Владислав
+              </div>
+              <div class="person__post">
+                Врач
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="person">
+            <div class="person__image">
+              <div class="person__img">
+                <img src="./img/icns/pers.svg" alt="" width="600" height="600">
+              </div>
+            </div>
+            <div class="person__body">
+              <div class="person__name">
+                Владислав
+              </div>
+              <div class="person__post">
+                Врач
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="uk-section section">
+  <div class="uk-container">
+    <div class="section__header">
+      <div class="section__title">
+        <h2>Услуги</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="key-indicators key-indicators--marked key-indicators--bordered-full uk-child-width-1-3@m">
+        <div class="key-indicators__item">
+          <div class="key-indicator">
+            <div class="key-indicator__body">
+              <div class="key-indicator__title">
+                <span>Терапевтическая стоматология</span>
+              </div>
+              <div class="key-indicator__text">
+                <span>Лечение кариеса и его осложнений, восстановление частично разрушенных зубов.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator">
+            <div class="key-indicator__body">
+              <div class="key-indicator__title">
+                <span>Ортопедия</span>
+              </div>
+              <div class="key-indicator__text">
+                <span>Установка съемных и несъемных ортопедических конструкций, восстановление разрушенных и
+                  отсутствующих зубов, устранение
+                  эстетических дефектов с использованием виниров, вкладок и коронок, сложное протезирование при
+                  заболеваниях пародонта.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator">
+            <div class="key-indicator__body">
+              <div class="key-indicator__title">
+                <span>Пародонтология</span>
+              </div>
+              <div class="key-indicator__text">
+                <span>Профессиональная гигиена полости рта, терапевтическое и хирургическое лечение тканей, окружающих
+                  зуб.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator">
+            <div class="key-indicator__body">
+              <div class="key-indicator__title">
+                <span>Хирургическая стоматология</span>
+              </div>
+              <div class="key-indicator__text">
+                <span>Удаление разрушенных зубов, корней «зубов мудрости» и новообразований в полости рта,
+                  зубосохраняющие операции.
+                  Имплантация: установка зубных имплантатов, восстановление объема костной ткани при ее недостатке по
+                  ширине и высоте
+                  (костная пластика и синус-лифтинг), применение временных ортодонтических имплантатов для выравнивания
+                  положения зубов.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator">
+            <div class="key-indicator__body">
+              <div class="key-indicator__title">
+                <span>Ортодонтия</span>
+              </div>
+              <div class="key-indicator__text">
+                <span>Исправление прикуса в любом возрасте, подбор и установка индивидуальных ортодонтических
+                  конструкций (использование
+                  вестибулярной техники многопетлевой дуги, классические и «невидимые» брекет-системы, каппы, трейнеры и
+                  др.).</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator">
+            <div class="key-indicator__body">
+              <div class="key-indicator__title">
+                <span>Детская стоматология</span>
+              </div>
+              <div class="key-indicator__text">
+                <span>Лечение под наркозом и под седацией ЗАКС (смеси закиси азота и медицинского кислорода),
+                  хирургическая стоматология (в
+                  том числе пластика уздечек губ и языка), исправление прикуса, формирование правильного роста зубов на
+                  этапе
+                  прорезывания, лечение молочных и постоянных зубов, детское протезирование, лечение десен, гигиена и
+                  профилактика
+                  заболеваний полости рта, обучающие программы по правильному уходу за зубами и полостью рта.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="uk-section section section--light">
+  <div class="uk-container">
+    <div class="section__body">
+      <div uk-grid class="uk-child-width-1-2@m">
+        <div>
+          <div class="section__header">
+            <div class="section__title">
+              <h2>Обратная связь</h2>
+            </div>
+            <div class="section__subtitle">
+              <p>Наши специалисты готовы:</p>
+              <ul class="list list--ul">
+                <li>ответить на интересующие Вас вопросы;</li>
+                <li>помочь Вам выбрать врача;</li>
+                <li>определить необходимые услуги для Вас.</li>
+              </ul>
+              <p>Оставьте заявку и мы перезвоним вам!</p>
+            </div>
+          </div>
+        </div>
+        <div class="uk-flex-first@m">
+          {% include "template/form.html" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/footer.html" %}

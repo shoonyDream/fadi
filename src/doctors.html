@@ -1,0 +1,186 @@
+{% set page = 'main' %}
+{% import "template/_mixins.html" as mixins %}
+{% include "template/header.html" %}
+<section class="uk-section section">
+  <div class="uk-container">
+    <div class="section__header">
+      <div class="section__title">
+        <h2>Наши врачи</h2>
+      </div>
+      <div class="section__subtitle">
+        <p>Лучшие специалисты, которые придерживаются самых высоких стандартов качества лечения. Современное
+          оборудование и
+          профессиональные навыки позволяют успешно решать задачи любой сложности.</p>
+      </div>
+    </div>
+    <div class="section__body">
+      <div class="person-list uk-child-width-1-4@s uk-child-width-1-2" uk-grid>
+        <div>
+          <div class="person">
+            <div class="person__image">
+              <div class="person__img">
+                {{mixins.icon('pers')}}
+              </div>
+            </div>
+            <div class="person__body">
+              <div class="person__name">
+                Владислав
+              </div>
+              <div class="person__post">
+                Врач
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="person">
+            <div class="person__image">
+              <div class="person__img">
+                <img src="./img/icns/pers.svg" alt="" width="600" height="600">
+              </div>
+            </div>
+            <div class="person__body">
+              <div class="person__name">
+                Владислав
+              </div>
+              <div class="person__post">
+                Врач
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="person">
+            <div class="person__image">
+              <div class="person__img">
+                <img src="./img/common/designer.jpg" alt="" width="600" height="600">
+              </div>
+            </div>
+            <div class="person__body">
+              <div class="person__name">
+                Владислав
+              </div>
+              <div class="person__post">
+                Врач
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="person">
+            <div class="person__image">
+              <div class="person__img">
+                <img src="./img/icns/pers.svg" alt="" width="600" height="600">
+              </div>
+            </div>
+            <div class="person__body">
+              <div class="person__name">
+                Владислав
+              </div>
+              <div class="person__post">
+                Врач
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="person">
+            <div class="person__image">
+              <div class="person__img">
+                <img src="./img/icns/pers.svg" alt="" width="600" height="600">
+              </div>
+            </div>
+            <div class="person__body">
+              <div class="person__name">
+                Владислав
+              </div>
+              <div class="person__post">
+                Врач
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="person">
+            <div class="person__image">
+              <div class="person__img">
+                <img src="./img/icns/pers.svg" alt="" width="600" height="600">
+              </div>
+            </div>
+            <div class="person__body">
+              <div class="person__name">
+                Владислав
+              </div>
+              <div class="person__post">
+                Врач
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="person">
+            <div class="person__image">
+              <div class="person__img">
+                <img src="./img/icns/pers.svg" alt="" width="600" height="600">
+              </div>
+            </div>
+            <div class="person__body">
+              <div class="person__name">
+                Владислав
+              </div>
+              <div class="person__post">
+                Врач
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="person">
+            <div class="person__image">
+              <div class="person__img">
+                <img src="./img/icns/pers.svg" alt="" width="600" height="600">
+              </div>
+            </div>
+            <div class="person__body">
+              <div class="person__name">
+                Владислав
+              </div>
+              <div class="person__post">
+                Врач
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="uk-section section section--light">
+  <div class="uk-container">
+    <div class="section__body">
+      <div uk-grid class="uk-child-width-1-2@m">
+        <div>
+          <div class="section__header">
+            <div class="section__title">
+              <h2>Обратная связь</h2>
+            </div>
+            <div class="section__subtitle">
+              <p>Наши специалисты готовы:</p>
+              <ul class="list list--ul">
+                <li>ответить на интересующие Вас вопросы;</li>
+                <li>помочь Вам выбрать врача;</li>
+                <li>определить необходимые услуги для Вас.</li>
+              </ul>
+              <p>Оставьте заявку и мы перезвоним вам!</p>
+            </div>
+          </div>
+        </div>
+        <div class="uk-flex-first@m">
+          {% include "template/form.html" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/footer.html" %}

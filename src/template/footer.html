@@ -1,0 +1,55 @@
+</main>
+</div>
+<footer class="footer">
+  <div class="footer__container">
+    <div class="uk-container uk-container-large">
+      <nav class="footer__nav">
+        <div class="footer-nav">
+          <div class="footer-nav__list">
+            <div class="footer-nav__item footer-nav__logo">
+              {% include "template/logo.html" %}
+            </div>
+            <div class="footer-nav__item footer-nav__about">
+              <ul uk-accordion class="uk-accordion">
+                <li>
+                  <a class="uk-accordion-title footer-nav__item-title" href="#"
+                    aria-expanded="false"><span>Клиника</span></a>
+                  <div class="footer-nav__accordion uk-accordion-content" hidden="">
+                    <a href="#" class="footer-nav__item-title"><span>Клиника</span></a>
+                    <div class="footer-nav__item-body">
+                      <ul class="footer-nav__item-list">
+                        <li class="footer-nav__item-link"><a href="#" class="link"><span>О нас</span></a></li>
+                        <li class="footer-nav__item-link"><a href="#" class="link"><span>Врачи</span></a>
+                        <li class="footer-nav__item-link"><a href="#" class="link"><span>Прайс</span></a>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav__item footer-nav__contacts">
+              <div class="footer-nav__item-title footer-nav__item-title--block"><span>Контакты</span></div>
+              <div class="footer-nav__item-body">
+                <a href="tel:+74950000000" class="link">+ 7 (495) 000-00-00</a><br>
+                <a href="mailto:info@pro-svetshop.ru" class="link">info@fadi-clinic.ru</a>
+              </div>
+
+            </div>
+            <div class="footer-nav__item footer-nav__socials">
+              <div class="footer-nav__item-title footer-nav__item-title--block"><span>Следите за нами в соцсетях</span>
+              </div>
+              {% include "template/social.html" %}
+            </div>
+          </div>
+      </nav>
+    </div>
+  </div>
+</footer>
+<a href="#" class="totop" id="sticky-to-top">{{mixins.icon('arrow-left')}}</a>
+{% include "template/header-mobile.html" %}
+{% include "template/modal.html" %}
+<script src="js/main.js"></script>
+<script src="js/partials/app.js"></script>
+</body>
+
+</html>

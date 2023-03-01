@@ -1,0 +1,151 @@
+{% set page = 'main' %}
+{% import "template/_mixins.html" as mixins %}
+{% include "template/header.html" %}
+
+<section class="uk-section section">
+  <div class="uk-container">
+    <div class="section__header">
+      <div class="section__title">
+        <h2>О клинике</h2>
+      </div>
+      <div class="section__subtitle">
+        <p>Современная клиника эстетической стоматологии. Команда квалифицированных докторов работает только
+          современными методами
+          лечения и с оборудованием последнего поколения.</p>
+      </div>
+    </div>
+    <div class="section__body">
+      <div class="slider-centered" uk-slider="center: true; velocity: 1.5; easing: cubic-bezier(.4,0,.2,1)">
+        <div class="uk-position-relative">
+          <div class="slider-centered__container uk-slider-container">
+            <ul class="slider-centered__list uk-slider-items uk-child-width-1-1 uk-grid">
+              <li class="slider-centered__item  uk-width-1-1 uk-width-3-4@m">
+                <div class="slider-centered__card" uk-slider-parallax="scale:0.85,1,0.85; opacity:0.3,1,0.3">
+                  <img src="./img/common/blog-test.jpg" alt="" width="600" height="600">
+                </div>
+              </li>
+              <li class="slider-centered__item  uk-width-1-1 uk-width-3-4@m">
+                <div class="slider-centered__card" uk-slider-parallax="scale:0.85,1,0.85; opacity:0.3,1,0.3">
+                  <img src="./img/common/about.jpg" alt="" width="600" height="600">
+                </div>
+              </li>
+              <li class="slider-centered__item  uk-width-1-1 uk-width-3-4@m">
+                <div class="slider-centered__card" uk-slider-parallax="scale:0.85,1,0.85; opacity:0.3,1,0.3">
+                  <img src="./img/common/banner.jpg" alt="" width="600" height="600">
+                </div>
+              </li>
+              <li class="slider-centered__item  uk-width-1-1 uk-width-3-4@m">
+                <div class="slider-centered__card" uk-slider-parallax="scale:0.85,1,0.85; opacity:0.3,1,0.3">
+                  <img src="./img/common/product-bg-test.jpg" alt="" width="600" height="600">
+                </div>
+              </li>
+              <li class="slider-centered__item  uk-width-1-1 uk-width-3-4@m">
+                <div class="slider-centered__card" uk-slider-parallax="scale:0.85,1,0.85; opacity:0.3,1,0.3">
+                  <img src="./img/common/product-test.png" alt="" width="600" height="600">
+                </div>
+              </li>
+              <li class="slider-centered__item  uk-width-1-1 uk-width-3-4@m">
+                <div class="slider-centered__card" uk-slider-parallax="scale:0.85,1,0.85; opacity:0.3,1,0.3">
+                  <img src="./img/common/vertical-test.jpg" alt="" width="600" height="600">
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <a class="slider-centered__arr uk-position-small uk-position-center-left-out" href="#" uk-slidenav-previous
+            uk-slider-item="previous"></a>
+          <a class="slider-centered__arr uk-position-small uk-position-center-right-out" href="#" uk-slidenav-next
+            uk-slider-item="next"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--light uk-section-large contacts">
+  <div class="uk-container">
+    <div class="uk-child-width-1-2@m" uk-grid>
+      <div>
+        <div class="contacts__content">
+          <div class="contacts__header">
+            <div class="contacts__title">
+              <h2>Контакты</h2>
+            </div>
+            <div class="contacts__subtitle">
+              <p>Свяжитесь с нами, если у вас возникли вопросы</p>
+            </div>
+          </div>
+          <div class="contacts__body">
+            <div class="contacts__item">
+              <a href="tel:+74950000000" class="contacts__info contacts__info--tel link">
+                +7 (495) 000-00-00
+              </a>
+            </div>
+            <div class="contacts__item">
+              <a href="mailto:shelter@shelter.ru" class="contacts__info contacts__info--mail link">
+                info@fadi-clinic.ru
+              </a>
+            </div>
+            <div class="contacts__item">
+              <span class="contacts__info contacts__info--address link">Адрес</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="contacts__map">
+          <div class="contacts__map-container">
+            <script type="text/javascript" charset="utf-8" async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8d258fc7a0026b4b90156bcbe25c650314cd337bb235c5785968ea79cf50af5b&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="uk-section section">
+  <div class="uk-container">
+    <div class="section__header">
+      <div class="section__title">
+        <h2>Юридическая информация</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <p>Деятельность осуществляется на основании лицензии.</p>
+      <p>Порядок оказания платной медицинской помощи:</p>
+      <p>Платные услуги предоставляются в рамках договоров на оказание платных медицинских услуг за счёт личных средств
+        граждан,
+        средств предприятий, учреждений и других средств, разрешённых законодательством.</p>
+    </div>
+  </div>
+</section>
+
+<section class="uk-section section section--light">
+  <div class="uk-container">
+    <div class="section__body">
+      <div uk-grid class="uk-child-width-1-2@m">
+        <div>
+          <div class="section__header">
+            <div class="section__title">
+              <h2>Обратная связь</h2>
+            </div>
+            <div class="section__subtitle">
+              <p>Наши специалисты готовы:</p>
+              <ul class="list list--ul">
+                <li>ответить на интересующие Вас вопросы;</li>
+                <li>помочь Вам выбрать врача;</li>
+                <li>определить необходимые услуги для Вас.</li>
+              </ul>
+              <p>Оставьте заявку и мы перезвоним вам!</p>
+            </div>
+          </div>
+        </div>
+        <div class="uk-flex-first@m">
+          {% include "template/form.html" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/footer.html" %}
